@@ -22,7 +22,7 @@ int32_t main() {
             adj[x].push_back(y);
             adj[y].push_back(x);
         }
-        int cnt_dfs_tree;
+        int cnt_dfs_tree = 0;
         for(int i = 1; i <= n_node ; i++) {
             if(not visited[i]) dfs(i),cnt_dfs_tree++;
         }
